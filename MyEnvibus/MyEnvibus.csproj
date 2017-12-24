@@ -49,7 +49,7 @@
     </Compile>
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\HomePageViewModel.cs" />
-    <Compile Include="Views\StationSchedules.xaml.cs">
+    <Compile Include="Views\StationLineChoice.xaml.cs">
       <DependentUpon>StationLineChoice.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\StationLineChoiceViewModel.cs" />

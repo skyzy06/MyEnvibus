@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
-using HtmlAgilityPack;
-using MyEnvibus.Core;
-using MyEnvibus.Views;
+﻿using MyEnvibus.Views;
 using Xamarin.Forms;
 
 namespace MyEnvibus

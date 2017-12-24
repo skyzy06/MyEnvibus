@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace MyEnvibus.Views
 {
-    public partial class StationSchedules : ContentPage
+    public partial class StationLineChoice : ContentPage
     {
-        public StationSchedules()
+        public StationLineChoice()
         {
             InitializeComponent();
             if(Device.RuntimePlatform == Device.iOS){
