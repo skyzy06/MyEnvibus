@@ -13,18 +13,9 @@ namespace MyEnvibus.Core
 {
     public class BusLineListRequest
     {
-        HttpResponseMessage response;
-        List<BusLine> result;
-
-        public BusLineListRequest()
-        {
-            response = null;
-            result = new List<BusLine>();
-        }
-
         public async Task<List<BusLine>> SendRequest(string searchTerm)
         {
-
+            List<BusLine> result = new List<BusLine>();
             try
             {
                 using (HttpClient client = new HttpClient())
@@ -35,7 +26,7 @@ namespace MyEnvibus.Core
                         new KeyValuePair<string, string>("term",searchTerm)
                     });
 
-                    response = await client.GetAsync("http://www.envibus.fr/?" + formatedParameters);
+                    HttpResponseMessage response = await client.GetAsync("http://www.envibus.fr/?" + formatedParameters);
 
                     JArray jsonResponse = JsonConvert.DeserializeObject<JArray>(
                         await response.Content.ReadAsStringAsync()
